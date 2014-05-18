@@ -1,0 +1,19 @@
+127.0.0.1	zirafa	localhost.localdomain	localhost
+::1	medved	localhost6.localdomain6	localhost6
+127.0.1.1	zirafa
+127.0.0.1	mio.localhost
+127.0.0.1   fajr.localhost
+127.0.0.1   symfony.localhost
+127.0.0.1	worklog.localhost
+158.195.18.253	compbio compbio.fmph.uniba.sk compbio
+158.195.16.154	element.ksp.sk ksp
+192.168.0.106 sediment
+
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
