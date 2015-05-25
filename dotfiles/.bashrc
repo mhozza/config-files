@@ -86,6 +86,10 @@ alias la='ls -A'
 alias l='ls -CF'
 alias rm='rm -I'
 alias launch='/home/michal/scripts/launch.sh'
+alias watchdn='/home/michal/scripts/dobre_noviny_video.sh'
+alias trash=gvfs-trash
+alias ls-trash=gvfs-ls
+alias empty-trash=gvfs-empty
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -107,6 +111,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+#prevent ovverridyng with >
+set -o noclobber
 
 #custom scripts
 export PYTHONSTARTUP=~/.pystartup
@@ -120,6 +126,8 @@ export QUILT_REFRESH_ARGS="-p ab --no-timestamps --no-index"
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+source $HOME/.django_bash_completion.sh
 
 # cb
 # A shortcut function that simplifies usage of xclip.
@@ -166,3 +174,5 @@ alias cbwd="pwd | cb"
 # Copy most recent command in bash history
 alias cbhs="cat $HISTFILE | tail -n 1 | cb"
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
