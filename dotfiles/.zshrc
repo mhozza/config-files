@@ -54,6 +54,9 @@ export PATH="/usr/local/heroku/bin:/home/michal/bin:/usr/local/sbin:/usr/local/b
 
 source $ZSH/oh-my-zsh.sh
 
+# include Z, yo
+. ~/scripts/z.sh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -84,9 +87,9 @@ alias l='ls -CF'
 alias rm='rm -I'
 alias launch='/home/michal/scripts/launch.sh'
 alias watchdn='/home/michal/scripts/dobre_noviny_video.sh'
-alias trash=gvfs-trash
-alias ls-trash=gvfs-ls
-alias empty-trash=gvfs-empty
+alias trash='gvfs-trash'
+alias ls-trash='gvfs-ls'
+alias empty-trash='gvfs-trash --empty'
 
 # cb
 # A shortcut function that simplifies usage of xclip.
